@@ -1,0 +1,82 @@
+/* Importando uma fonte moderna do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* --- Estilos Gerais --- */
+body {
+    font-family: 'Poppins', sans-serif; /* Define a fonte para toda a página */
+    background-color: #f0f2f5; /* Um cinza bem claro para o fundo */
+    color: #333; /* Cor do texto principal */
+    display: flex; /* Habilita o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Ocupa a altura total da tela */
+    margin: 0; /* Remove a margem padrão do body */
+}
+
+/* --- Container do Formulário --- */
+form {
+    background-color: #ffffff; /* Fundo branco para o formulário */
+    padding: 40px; /* Espaçamento interno generoso */
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    width: 100%;
+    max-width: 400px; /* Largura máxima para não ficar muito largo em telas grandes */
+    box-sizing: border-box; /* Garante que padding não afete a largura total */
+}
+
+/* --- Título --- */
+h1 {
+    text-align: center; /* Centraliza o título */
+    color: #1c1e21; /* Um tom de preto mais suave */
+    margin-bottom: 30px; /* Espaço abaixo do título */
+    font-size: 24px;
+    padding: 60px; /* Tamanho da fonte */
+}
+
+/* --- Rótulos (Labels) --- */
+label {
+    display: block; /* Faz com que o rótulo ocupe uma linha inteira */
+    margin-bottom: 8px; /* Espaço entre o rótulo e o campo de input */
+    font-weight: 500; /* Deixa a fonte um pouco mais forte */
+    color: #606770; /* Cor cinza para os rótulos */
+}
+
+/* --- Campos de Input (Nome e Email) --- */
+input[type="text"],
+input[type="email"] {
+    width: 100%; /* Ocupa 100% da largura do formulário */
+    padding: 12px 15px; /* Espaçamento interno (vertical e horizontal) */
+    margin-bottom: 20px; /* Espaço abaixo de cada campo */
+    border: 1px solid #dddfe2; /* Borda sutil */
+    border-radius: 6px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte dentro do campo */
+    box-sizing: border-box; /* Garante que padding não afete a largura total */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave para o foco */
+}
+
+/* Efeito de foco para os campos de input */
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none; /* Remove a borda padrão do navegador ao focar */
+    border-color: #007bff; /* Muda a cor da borda para um azul vibrante */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Adiciona uma sombra externa sutil */
+}
+
+/* --- Botão de Envio --- */
+input[type="submit"] {
+    width: 100%; /* Ocupa 100% da largura */
+    padding: 12px; /* Espaçamento interno */
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #ffffff; /* Texto branco */
+    border: none; /* Sem borda */
+    border-radius: 6px; /* Bordas arredondadas */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: 600; /* Fonte mais forte (negrito) */
+    cursor: pointer; /* Muda o cursor para uma "mãozinha" */
+    transition: background-color 0.3s ease; /* Transição suave para o hover */
+}
+
+/* Efeito de hover para o botão */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Um tom de azul mais escuro ao passar o mouse */
+}
