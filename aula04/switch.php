@@ -1,6 +1,7 @@
 <?php 
 $cor = 'azulao';
 
+# usado ao inves do IF e ElSE quando está comparando uma variavel diversas vezes
 switch($cor){
     case 'amarelo':
         print("A cor é amarelo");
