@@ -1,0 +1,75 @@
+/* ---- Estilos Gerais da Página ---- */
+body {
+    font-family: Arial, sans-serif; /* Define uma fonte limpa e legível */
+    background-color: #f4f4f9; /* Um fundo cinza claro para suavizar a aparência */
+    color: #333; /* Cor do texto principal */
+    display: flex; /* Habilita o Flexbox para centralização */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    min-height: 100vh; /* Faz o body ocupar a altura total da tela */
+    margin: 0;
+}
+
+h1 {
+    text-align: center; /* Centraliza o título */
+    color: #444;
+}
+
+/* ---- Estilo do Contêiner do Formulário ---- */
+form {
+    background-color: #ffffff; /* Fundo branco para o formulário */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    max-width: 400px; /* Largura máxima para não ficar muito largo em telas grandes */
+    width: 100%; /* Garante que o formulário se ajuste em telas menores */
+}
+
+/* ---- Estilos para as Etiquetas (Labels) ---- */
+label {
+    display: block; /* Faz cada label ocupar uma linha inteira */
+    margin-bottom: 8px; /* Espaço abaixo da label, antes do campo de input */
+    font-weight: bold; /* Deixa o texto da label em negrito */
+    font-size: 14px;
+}
+
+/* ---- Estilos para os Campos de Entrada (Inputs) ---- */
+input[type="text"],
+input[type="email"] {
+    width: 100%; /* Ocupa 100% da largura do formulário */
+    padding: 12px; /* Espaçamento interno para o texto ficar confortável */
+    border: 1px solid #ccc; /* Borda sutil */
+    border-radius: 5px; /* Cantos arredondados */
+    margin-bottom: 20px; /* Espaço maior entre os campos */
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+    font-size: 16px;
+    transition: border-color 0.3s; /* Animação suave na borda */
+}
+
+/* ---- Efeito de Foco nos Campos de Entrada ---- */
+/* Muda a cor da borda quando o usuário clica no campo */
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #007bff; /* Azul vibrante para indicar foco */
+    outline: none; /* Remove a borda de foco padrão do navegador */
+}
+
+/* ---- Estilo para o Botão de Envio ---- */
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Texto branco */
+    border: none; /* Sem borda */
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer; /* Muda o cursor para uma "mãozinha" */
+    transition: background-color 0.3s; /* Animação suave na cor de fundo */
+}
+
+/* ---- Efeito Hover no Botão ---- */
+/* Escurece o botão quando o mouse passa por cima */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
