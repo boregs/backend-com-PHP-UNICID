@@ -12,7 +12,4 @@ $notas = [
 foreach($notas as $chave => $valor){
     echo "Nota - $chave: $valor <br>"
 }
-
-
-
 ?>
